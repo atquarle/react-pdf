@@ -346,7 +346,7 @@ export default class Document extends PureComponent {
 
   render() {
     const { className, inputRef } = this.props;
-
+	console.log("here")
     return (
       <div
         className={mergeClassNames('react-pdf__Document', className)}
