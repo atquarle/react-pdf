@@ -3224,6 +3224,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"file-loader@npm:^6.0.0":
+  version: 6.2.0
+  resolution: "file-loader@npm:6.2.0"
+  dependencies:
+    loader-utils: ^2.0.0
+    schema-utils: ^3.0.0
+  peerDependencies:
+    webpack: ^4.0.0 || ^5.0.0
+  checksum: 0f103418c072ec66c081a9908cd7824ee19905e18be16889cb050f5f373998afaf7ca4c2fd2df4cabf703a2cd526aefe59105930e3f8d266a5b35e6d5f5b3cf4
+  languageName: node
+  linkType: hard
+
 "fill-range@npm:^4.0.0":
   version: 4.0.0
   resolution: "fill-range@npm:4.0.0"
@@ -4644,6 +4656,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"merge-refs@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "merge-refs@npm:1.0.0"
+  checksum: 75e0b1a301e3ac9f057e4f4f8fc5c286af169e5cc7afc0786653ee7e7d338b8756c6b10a934793dfb80a9fbdb7bf2b002ddb173b0106329dfcf27909550a62fc
+  languageName: node
+  linkType: hard
+
 "merge-stream@npm:^2.0.0":
   version: 2.0.0
   resolution: "merge-stream@npm:2.0.0"
@@ -5435,10 +5454,10 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"pdfjs-dist@npm:2.4.456":
-  version: 2.4.456
-  resolution: "pdfjs-dist@npm:2.4.456"
-  checksum: 3d90379d6503127d5b969d16a23cb1928cd58e01752efa065c1b530fd9981f4ec9a4239e37fff7690315ff8d4335994f3e292206ac1d537cdf3e5b0f6ddcd27d
+"pdfjs-dist@npm:2.6.347":
+  version: 2.6.347
+  resolution: "pdfjs-dist@npm:2.6.347"
+  checksum: 64007e9fce35be3d9e8a2d106bdcd350cd71df4f4fe99a94adbdb4ee662ce1e84abfe0feff38d6cfa94fa79a291cfe96f1efd874e8417c52d7ab753d2046bf26
   languageName: node
   linkType: hard
 
@@ -5774,7 +5793,7 @@ fsevents@^1.2.7:
     less-loader: ^8.0.0
     react: ^17.0.0
     react-dom: ^17.0.0
-    react-pdf: latest
+    react-pdf: "git://github.com/atquarle/react-pdf.git"
     style-loader: ^1.2.0
     webpack: ^5.20.0
     webpack-cli: ^4.2.0
@@ -5782,21 +5801,22 @@ fsevents@^1.2.7:
   languageName: unknown
   linkType: soft
 
-"react-pdf@npm:latest":
-  version: 5.0.0
-  resolution: "react-pdf@npm:5.0.0"
+"react-pdf@git://github.com/atquarle/react-pdf.git":
+  version: 5.3.2
+  resolution: "react-pdf@git://github.com/atquarle/react-pdf.git#commit=4685db6cf1877db4db1791c4ce2311d126f834c9"
   dependencies:
     "@babel/runtime": ^7.0.0
+    file-loader: ^6.0.0
     make-cancellable-promise: ^1.0.0
     make-event-props: ^1.1.0
     merge-class-names: ^1.1.1
-    pdfjs-dist: 2.4.456
+    merge-refs: ^1.0.0
+    pdfjs-dist: 2.6.347
     prop-types: ^15.6.2
-    worker-loader: ^3.0.0
   peerDependencies:
-    react: ^16.3.0
-    react-dom: ^16.3.0
-  checksum: 206943f04a6ed06958340c026839b42f408b34a3226d98859b98d70471c06c5e8efc6bb6014966b9e6c474087f6538c889b4ae14b288ab1495a0b3304ff92eec
+    react: ^16.3.0 || ^17.0.0-0
+    react-dom: ^16.3.0 || ^17.0.0-0
+  checksum: 2924e16c78009bff81871649cc8747c1afb269a6af7770b1e2a6929fa3c8420fdeee959a9ab242ca11a65f45dfc05fc9cc3a3c3c46e916c31a69478842899b23
   languageName: node
   linkType: hard
 
@@ -7374,18 +7394,6 @@ fsevents@^1.2.7:
     reduce-flatten: ^2.0.0
     typical: ^5.0.0
   checksum: 022dc1d1a3a2b15490288840822f4f5db31d653edc31117e492e402e77ea02509f44ac7fe163b0aa39d1cc8e2df4d7ef2a28ad8bf3795e7f2a8ee1da8b8bef54
-  languageName: node
-  linkType: hard
-
-"worker-loader@npm:^3.0.0":
-  version: 3.0.5
-  resolution: "worker-loader@npm:3.0.5"
-  dependencies:
-    loader-utils: ^2.0.0
-    schema-utils: ^3.0.0
-  peerDependencies:
-    webpack: ^4.0.0 || ^5.0.0
-  checksum: a478bdb632bb78b9ba5203660fd9976605c2532f9a1bff660f0ab2af6f06f9c80e4780392e4e5549bf929177b8cb7089a6d0fe636b671340e526aa97e6508445
   languageName: node
   linkType: hard
 

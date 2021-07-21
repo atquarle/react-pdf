@@ -1,4 +1,4 @@
-Integration testsimport React, { forwardRef, PureComponent } from 'react';
+import React, { forwardRef, PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { isRef } from '../shared/propTypes';
 
