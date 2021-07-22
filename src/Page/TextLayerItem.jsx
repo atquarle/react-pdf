@@ -96,26 +96,28 @@ export class TextLayerItemInternal extends PureComponent {
     const { customTextRenderer, scale, str: text } = this.props;
 
     return (
-      <span
-        ref={(ref) => { this.item = ref; }}
-        style={{
-          height: '1em',
-          fontFamily: 'sans-serif',
-          fontSize: `${fontSize * scale}px`,
-          position: 'absolute',
-          top: `${top * scale}px`,
-          left: `${left * scale}px`,
-          transformOrigin: '0 0',
-          whiteSpace: 'pre',
-          pointerEvents: 'all',
-        }}
-      >
-        {
-          customTextRenderer
-            ? customTextRenderer(this.props)
-            : text
-        }
-      </span>
+      <div style={{ height: "200px" }}>
+          <span
+            ref={(ref) => { this.item = ref; }}
+            style={{
+              height: '1em',
+              fontFamily: 'sans-serif',
+              fontSize: `${fontSize * scale}px`,
+              position: 'absolute',
+              top: `${top * scale}px`,
+              left: `${left * scale}px`,
+              transformOrigin: '0 0',
+              whiteSpace: 'pre',
+              pointerEvents: 'all',
+            }}
+          >
+            {
+              customTextRenderer
+                ? customTextRenderer(this.props)
+                : text
+            }
+          </span>
+      </div>
     );
   }
 }
