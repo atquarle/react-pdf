@@ -90,26 +90,27 @@ var TextLayerInternal = /*#__PURE__*/function (_PureComponent) {
             case 6:
               _yield$cancellable$pr = _context.sent;
               textItems = _yield$cancellable$pr.items;
+              console.log(textItems);
 
               _this.setState({
                 textItems: textItems
               }, _this.onLoadSuccess);
 
-              _context.next = 14;
+              _context.next = 15;
               break;
 
-            case 11:
-              _context.prev = 11;
+            case 12:
+              _context.prev = 12;
               _context.t0 = _context["catch"](1);
 
               _this.onLoadError(_context.t0);
 
-            case 14:
+            case 15:
             case "end":
               return _context.stop();
           }
         }
-      }, _callee, null, [[1, 11]]);
+      }, _callee, null, [[1, 12]]);
     })));
     (0, _defineProperty2["default"])((0, _assertThisInitialized2["default"])(_this), "onLoadSuccess", function () {
       var onGetTextSuccess = _this.props.onGetTextSuccess;
@@ -207,7 +208,6 @@ var TextLayerInternal = /*#__PURE__*/function (_PureComponent) {
       var _this$state = this.state,
           endOfContentTop = _this$state.endOfContentTop,
           textItems = _this$state.textItems;
-      console.log("here");
       return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
         className: "react-pdf__Page__textContent",
         onMouseDown: this.onMouseDown,

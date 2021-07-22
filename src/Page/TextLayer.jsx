@@ -55,6 +55,7 @@ export class TextLayerInternal extends PureComponent {
       const cancellable = makeCancellable(page.getTextContent());
       this.runningTask = cancellable;
       const { items: textItems } = await cancellable.promise;
+      console.log(textItems)
       this.setState({ textItems }, this.onLoadSuccess);
     } catch (error) {
       this.onLoadError(error);
@@ -152,7 +153,7 @@ export class TextLayerInternal extends PureComponent {
       endOfContentRef,
     } = this;
     const { endOfContentTop, textItems } = this.state;
-	console.log("here")
+
     return (
       <>
         {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}

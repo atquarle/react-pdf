@@ -455,7 +455,6 @@ var Document = /*#__PURE__*/function (_PureComponent) {
       var _this$props2 = this.props,
           className = _this$props2.className,
           inputRef = _this$props2.inputRef;
-      console.log("here");
       return /*#__PURE__*/_react["default"].createElement("div", (0, _extends2["default"])({
         className: (0, _mergeClassNames["default"])('react-pdf__Document', className),
         ref: inputRef

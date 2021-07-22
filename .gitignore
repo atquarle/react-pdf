@@ -7,6 +7,7 @@
 !**/.yarn/plugins
 coverage
 node_modules
+sample
 test_pdfs
 npm-debug.log
 yarn-error.log
